@@ -13,7 +13,7 @@ public class DataMinUdf extends UDF {
     public HiveDecimalWritable evaluate(HiveDecimalWritable a, HiveDecimalWritable b) {
         if (a == null || b == null) return null;
         int i = a.compareTo(b);
-        if (i>1){
+        if (i > 1) {
             return a;
         }
         return b;

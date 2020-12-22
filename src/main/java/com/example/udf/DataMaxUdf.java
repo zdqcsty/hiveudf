@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 public class DataMaxUdf extends UDF {
 
-    public Long evaluate(Long a, Long  b) {
+    public Long evaluate(Long a, Long b) {
         if (a == null || b == null) return null;
         return (a.longValue() > b.longValue()) ? a : b;
     }
@@ -24,7 +24,7 @@ public class DataMaxUdf extends UDF {
     public BigDecimal evaluate(BigDecimal a, BigDecimal b) {
         if (a == null || b == null) return null;
         int i = a.compareTo(b);
-        if (i>1){
+        if (i > 1) {
             return b;
         }
         return a;

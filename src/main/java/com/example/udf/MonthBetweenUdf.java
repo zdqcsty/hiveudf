@@ -39,13 +39,15 @@ public class MonthBetweenUdf extends UDF {
 
         try {
             resultDate = sdf1.parse(date);
-        } catch (ParseException parseException) {}
+        } catch (ParseException parseException) {
+        }
 
 
         if (resultDate == null) {
             try {
                 resultDate = sdf2.parse(date);
-            } catch (ParseException parseException) {}
+            } catch (ParseException parseException) {
+            }
         } else {
 
             return resultDate;
@@ -54,7 +56,8 @@ public class MonthBetweenUdf extends UDF {
         if (resultDate == null) {
             try {
                 resultDate = sdf3.parse(date);
-            } catch (ParseException parseException) {}
+            } catch (ParseException parseException) {
+            }
         } else {
 
             return resultDate;
@@ -63,7 +66,8 @@ public class MonthBetweenUdf extends UDF {
         if (resultDate == null) {
             try {
                 resultDate = sdf4.parse(date);
-            } catch (ParseException parseException) {}
+            } catch (ParseException parseException) {
+            }
         } else {
 
             return resultDate;
@@ -72,7 +76,8 @@ public class MonthBetweenUdf extends UDF {
         if (resultDate == null) {
             try {
                 resultDate = sdf5.parse(date);
-            } catch (ParseException parseException) {}
+            } catch (ParseException parseException) {
+            }
         } else {
 
             return resultDate;
@@ -81,7 +86,8 @@ public class MonthBetweenUdf extends UDF {
         if (resultDate == null) {
             try {
                 resultDate = sdf6.parse(date);
-            } catch (ParseException parseException) {}
+            } catch (ParseException parseException) {
+            }
         } else {
 
             return resultDate;
@@ -90,7 +96,8 @@ public class MonthBetweenUdf extends UDF {
         if (resultDate == null) {
             try {
                 resultDate = sdf7.parse(date);
-            } catch (ParseException parseException) {}
+            } catch (ParseException parseException) {
+            }
         } else {
 
             return resultDate;

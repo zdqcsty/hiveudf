@@ -7,8 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class DateSub extends UDF
-{
+public class DateSub extends UDF {
     public String evaluate(String date, Integer interval, String flag) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
